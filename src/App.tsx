@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import Accordeon from './Accordeon'
+import SwitcherBlock from './SwitcherBlock';
 
 function App() {
   return (
     <div className="App">
-     Hello, samurai! Let's go!
+      
+      <Accordeon titleValue={"Menu"} collapsed={true}/>
+      <Accordeon titleValue={"Users"} collapsed={false}/>
+      <SwitcherBlock switcher={true}/>
     </div>
   );
 }
